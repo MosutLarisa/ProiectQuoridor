@@ -4,7 +4,7 @@ function button(){
     
     let resetButton = createButton('Reset');
     resetButton.style('font-size', '30px');
-    resetButton.style('background-color', color("yellow"));
+    resetButton.style('background-color', color("rgb(242,245,200)"));
     resetButton.position(270, 700);
     resetButton.mousePressed(resetGame);
 }
