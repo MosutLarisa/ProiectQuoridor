@@ -5,6 +5,7 @@ function setup() {
     createCanvas(1000, 800);
     initPlayers();
     button();
+
 }
 
 function draw() {

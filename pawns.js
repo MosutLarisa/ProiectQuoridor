@@ -8,8 +8,8 @@ function createPlayer(row, col, color) {
 }
 
 function initPlayers() {
-    players.push(createPlayer(BOARD_SIZE - 1, Math.floor(BOARD_SIZE / 2), color("red")));
-    players.push(createPlayer(0, Math.floor(BOARD_SIZE / 2), color("green")));
+    players.push(createPlayer(BOARD_SIZE - 1, Math.floor(BOARD_SIZE / 2), color("#B67C90")));
+    players.push(createPlayer(0, Math.floor(BOARD_SIZE / 2), color("#82A8C7")));
 }
 
 function drawPlayer(position, color) {
