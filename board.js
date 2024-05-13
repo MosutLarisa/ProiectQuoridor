@@ -1,10 +1,10 @@
 function drawBoard() {
 
-    for (let i = 0; i < BOARD_SIZE; i++) {
-        for (let j = 0; j < BOARD_SIZE; j++) {
+    for (let row = 0; row < BOARD_SIZE; row++) {
+        for (let col = 0; col < BOARD_SIZE; col++) {
             stroke("black");
             noFill();
-            rect(j * CELL_SIZE, i * CELL_SIZE, CELL_SIZE, CELL_SIZE);
+            rect(col * CELL_SIZE, row * CELL_SIZE, CELL_SIZE, CELL_SIZE);
         }
     }
 
