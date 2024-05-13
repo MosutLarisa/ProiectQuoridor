@@ -1,5 +1,6 @@
 const BOARD_SIZE = 9;
-const CELL_SIZE = 70;
+const CELL_SIZE = 60;
+const BORDER_SIZE = 10;
 
 function setup() {
     createCanvas(1200, 800);

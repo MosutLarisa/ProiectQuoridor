@@ -13,9 +13,10 @@ function initPlayers() {
 }
 
 function drawPlayer(position, color) {
+    let x = position.col * (CELL_SIZE + BORDER_SIZE) + CELL_SIZE / 2; // Coordonata X a centrului cercului
+    let y = position.row * (CELL_SIZE + BORDER_SIZE) + CELL_SIZE / 2; // Coordonata Y a centrului cercului
     fill(color);
-    noStroke();
-    ellipse((position.col + 0.5) * CELL_SIZE, (position.row + 0.5) * CELL_SIZE, CELL_SIZE * 0.6);
+    ellipse(x, y, CELL_SIZE * 0.6);
 }
 
 
