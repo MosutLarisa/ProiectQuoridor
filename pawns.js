@@ -8,8 +8,8 @@ function createPlayer(row, col, color) {
 }
 
 function initPlayers() {
-    players.push(createPlayer(BOARD_SIZE - 1, Math.floor(BOARD_SIZE / 2), color("#B67C90")));
-    players.push(createPlayer(0, Math.floor(BOARD_SIZE / 2), color("#82A8C7")));
+    players.push(createPlayer(BOARD_SIZE - 1, Math.floor(BOARD_SIZE / 2), color("#C59A96")));
+    players.push(createPlayer(1, Math.floor(BOARD_SIZE / 2), color("#E0A872")));
 }
 
 function drawPlayer(position, color) {
@@ -24,11 +24,11 @@ function keyPressed() {
     let newRow = player.position.row;
     let newCol = player.position.col;
 
-    if (keyCode === UP_ARROW && newRow > 0) {
+    if (keyCode === UP_ARROW && newRow > 1) {
         newRow--;
     } else if (keyCode === DOWN_ARROW && newRow < BOARD_SIZE - 1) {
         newRow++;
-    } else if (keyCode === LEFT_ARROW && newCol > 0) {
+    } else if (keyCode === LEFT_ARROW && newCol > 1) {
         newCol--;
     } else if (keyCode === RIGHT_ARROW && newCol < BOARD_SIZE - 1) {
         newCol++;
