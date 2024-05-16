@@ -1,4 +1,4 @@
-let inputPlayer1, inputPlayer2, playButton;
+let inputPlayer1, inputPlayer2;
 
 function player(){
     // Jucătorul 1

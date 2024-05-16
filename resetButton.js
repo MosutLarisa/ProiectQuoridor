@@ -1,4 +1,3 @@
-let resetButton;
 
 function button(){
     
