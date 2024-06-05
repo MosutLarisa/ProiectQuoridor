@@ -1,4 +1,12 @@
 
+function mousePressed() {
+    let col = Math.floor(mouseX / POSITION_MULTIPLIER);
+    let row = Math.floor(mouseY / POSITION_MULTIPLIER);
+    if (row >= 0 && row < BOARD_SIZE && col >= 0 && col < BOARD_SIZE) {
+        walls[row][col] = true;
+    }
+}
+
 
 function setup() {
     createCanvas(1425, 800);
@@ -21,4 +29,8 @@ function draw() {
     text('Jucător 2:', 350, 20);
     fill("#C59A96");
     text('Jucător 1:', 350, 725);
+
+    if (gameWon) {
+        displayWinMessage();
+    }
 }
