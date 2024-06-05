@@ -1,13 +1,14 @@
 const RESET_BUTTON_COLOR = "#82ADA9";
 const RESET_BUTTON_FONT_SIZE = "30px";
 const RESET_BUTTON_POSITION = {
-    x: 750,
-    y: 100,
+    x: 800,
+    y: 580,
 };
 const PLAYER_DEFAULT_POSITION_X = BOARD_SIZE / 2;
 
 function createResetButton() {
     let resetButton = createButton('RESET');
+    resetButton.style('font-family', 'Foldit');
     resetButton.style('font-size', RESET_BUTTON_FONT_SIZE);
     resetButton.style('background-color', color(RESET_BUTTON_COLOR));
     resetButton.position(RESET_BUTTON_POSITION.x, RESET_BUTTON_POSITION.y);

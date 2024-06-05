@@ -28,6 +28,7 @@ function initPlayers() {
 function drawPlayer(position, color) {
     let x = position.col * POSITION_MULTIPLIER + POSITION_OFFSET; // Coordonata X a centrului cercului
     let y = position.row * POSITION_MULTIPLIER + POSITION_OFFSET; // Coordonata Y a centrului cercului
+    stroke("black");
     fill(color);
     ellipse(x, y, CELL_SIZE * 0.6);
 }

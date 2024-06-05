@@ -1,11 +1,11 @@
 let inputPlayer1, inputPlayer2;
 const STARTPOS_PLAYER1 = {
     x: 280,
-    y: 70,
+    y: 55,
 };
 const STARTPOS_PLAYER2 = {
     x: 280,
-    y: 775,
+    y: 760,
 };
 
 const COLOR_PLAYER1 = "#E0A872";

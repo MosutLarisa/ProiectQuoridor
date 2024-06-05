@@ -57,7 +57,7 @@ function mousePressed() {
 
         // Update the last cell clicked
         lastCell = { row, col, side: wallSide };
-
+        draw();
     }
 }
 

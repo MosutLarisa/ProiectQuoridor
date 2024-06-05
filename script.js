@@ -8,7 +8,7 @@ function mousePressed() {
 }
 
 function setup() {
-    createCanvas(1425, 800);
+    createCanvas(1420, 780);
     drawNameFields();
     initPlayers();
     createResetButton();
@@ -24,11 +24,7 @@ function draw() {
     for (let player of players) {
         drawPlayer(player.position, player.color);
     }
-    fill("#E0A872");
-    text('Jucător 2:', 350, 20);
-    fill("#C59A96");
-    text('Jucător 1:', 350, 725);
-
+fill("black")
     if (nameFieldsEmpty()) {
         let currentPlayerText = currentPlayerIndex === 0 ? "Jucător 2 his turn" : "Jucător 1 his turn";
         text(currentPlayerText, 20, height - 20);
@@ -36,6 +32,9 @@ function draw() {
         let currentPlayerText = currentPlayerIndex === 0 ? inputPlayer2.value() + " 's turn" : inputPlayer1.value() + "'s turn";
         text(currentPlayerText, 20, height - 20);
     }
+    playerText();
+    title();
+    incurajare();
 
     if (gameWon) {
         displayWinMessage();
