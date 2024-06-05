@@ -8,7 +8,7 @@ function mousePressed() {
 }
 
 function setup() {
-    createCanvas(1420, 780);
+    createCanvas(1650, 870);
     drawNameFields();
     initPlayers();
     createResetButton();
@@ -34,8 +34,7 @@ fill("black")
     }
     playerText();
     title();
-    incurajare();
-
+    
     if (gameWon) {
         displayWinMessage();
     }
