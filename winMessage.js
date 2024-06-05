@@ -1,7 +1,6 @@
 let gameWon = false;
 
 function displayWinMessage() {
-    fill("#F1F3C4");
     rect(0, 320, 1500, 100);
     push();
     fill(0);
