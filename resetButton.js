@@ -8,7 +8,6 @@ const PLAYER_DEFAULT_POSITION_X = BOARD_SIZE / 2;
 
 function createResetButton() {
     let resetButton = createButton('RESET');
-    resetButton.style('font-family', 'Foldit');
     resetButton.style('font-size', RESET_BUTTON_FONT_SIZE);
     resetButton.style('background-color', color(RESET_BUTTON_COLOR));
     resetButton.position(RESET_BUTTON_POSITION.x, RESET_BUTTON_POSITION.y);
