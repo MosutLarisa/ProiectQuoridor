@@ -7,19 +7,18 @@ function mousePressed() {
     }
 }
 
-
 function setup() {
     createCanvas(1425, 800);
+    drawNameFields();
     initPlayers();
     button();
-    player();
+    
 }
 
 function draw() {
     background("#796F6B" );
     fill("#423732"); // Setează culoarea de umplere a tablei
     square(60, 60, 645); // Desenează un pătrat la coordonatele sale
-
 
     drawBoard();
     for (let player of players) {
@@ -29,6 +28,14 @@ function draw() {
     text('Jucător 2:', 350, 20);
     fill("#C59A96");
     text('Jucător 1:', 350, 725);
+
+    if (nameFieldsEmpty()) {
+        let currentPlayerText = currentPlayerIndex === 0 ? "Jucător 2 his turn" : "Jucător 1 his turn";
+        text(currentPlayerText, 20, height - 20);
+    } else {
+        let currentPlayerText = currentPlayerIndex === 0 ? inputPlayer2.value() + " 's turn" : inputPlayer1.value() + "'s turn";
+        text(currentPlayerText, 20, height - 20);
+    }
 
     if (gameWon) {
         displayWinMessage();
