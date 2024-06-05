@@ -1,5 +1,9 @@
 let players = [];
 let currentPlayerIndex = 0;
+const BORDER_SIZE = 10;
+const POSITION_MULTIPLIER = CELL_SIZE + BORDER_SIZE;
+const POSITION_OFFSET = CELL_SIZE / 2;
+
 function createPlayer(row, col, color) {
     return {
         position: { row, col },
@@ -13,8 +17,8 @@ function initPlayers() {
 }
 
 function drawPlayer(position, color) {
-    let x = position.col * (CELL_SIZE + BORDER_SIZE) + CELL_SIZE / 2; // Coordonata X a centrului cercului
-    let y = position.row * (CELL_SIZE + BORDER_SIZE) + CELL_SIZE / 2; // Coordonata Y a centrului cercului
+    let x = position.col * POSITION_MULTIPLIER + POSITION_OFFSET; // Coordonata X a centrului cercului
+    let y = position.row * POSITION_MULTIPLIER + POSITION_OFFSET; // Coordonata Y a centrului cercului
     fill(color);
     ellipse(x, y, CELL_SIZE * 0.6);
 }

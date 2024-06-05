@@ -1,3 +1,5 @@
+const BOARD_SIZE = 10;
+const CELL_SIZE = 60;
 function drawBoard() {
 
     for (let row = 1; row < BOARD_SIZE; row++) {

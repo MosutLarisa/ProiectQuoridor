@@ -1,6 +1,4 @@
-const BOARD_SIZE = 10;
-const CELL_SIZE = 60;
-const BORDER_SIZE = 10;
+
 
 function setup() {
     createCanvas(1425, 800);
@@ -20,7 +18,7 @@ function draw() {
         drawPlayer(player.position, player.color);
     }
     fill("#E0A872");
-    text('Jucător 1:', 350, 20);
+    text('Jucător 2:', 350, 20);
     fill("#C59A96");
-    text('Jucător 2:', 350, 725);
+    text('Jucător 1:', 350, 725);
 }
