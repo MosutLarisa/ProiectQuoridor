@@ -11,7 +11,7 @@ function setup() {
     createCanvas(1425, 800);
     drawNameFields();
     initPlayers();
-    button();
+    createResetButton();
     
 }
 
